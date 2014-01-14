@@ -27,8 +27,6 @@
 
   }
 
-  var void_elements = {"area": true,"base": true,"br": true,"col": true,"embed": true,"hr": true,"img": true,"input": true,"keygen": true,"link": true,"meta": true,"param": true,"source": true,"track": true,"wbr": true};
-
   var string_match_1 = '"(?:(?:\\\\\\\\)|(?:\\\\")|(?:[^"]))*"';
   var string_match_2 = "'(?:(?:\\\\\\\\)|(?:\\\\')|(?:[^']))*'";
   var text_match = "\\{(?:(?:\\\\\\\\)|(?:\\\\})|(?:[^\\}]))*\\}";
@@ -129,7 +127,7 @@
           if (contexts[i].type == "group") { break; }
         }
         if(i == contexts.length) {
-          throw new Error("Group closeing brace found, but no matching opening brace");
+          throw new Error("Group closing brace found, but no matching opening brace");
         }
         contexts.splice(0,i);
         return;

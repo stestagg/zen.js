@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  .test-message { font-family: monospace; }
+  #fixture{
+    background: #eea;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    color: white;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+  }
+  #fixture>h1{ 
+    margin:0; 
+    padding:0;
+    text-shadow: 2px 2px 1px #772;
+  }
+  #fixture>div{
+    color: black;
+    background: white;
+    padding: 3px;
+    border-radius: 4px;
+    min-height: 1em;
+    margin: 5px;
+  }
+  a{ color: blue; }
+  </style>
+  <meta charset="utf-8">
+  <title>Zen Tests</title>
+  <link rel="stylesheet" href="qunit-1.12.0.css">
+  <script src="jquery.min.js"></script>
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="fixture">
+    <h1>Created HTML</h1>
+
+  </div>
+  <script src="qunit-1.12.0.js"></script>
+  <script src="../zen.js"></script>
+  <script src="tests.js"></script>
+</body>
+</html>
