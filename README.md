@@ -22,13 +22,7 @@ results in:
 </div>
 ```
 
-http://jsfiddle.net/xLJY8/
-
-jQuery Example
----
-
-```html
-```
+More examples may be seen in this [js-fiddle](http://jsfiddle.net/xLJY8/1/)
 
 API
 ---
