@@ -1,4 +1,4 @@
-zen.js
+zen.js [![Build Status](https://travis-ci.org/stestagg/zen.js.png?branch=master)](https://travis-ci.org/stestagg/zen.js)
 ======
 
 zen.js is a browser JS library that makes creating DOM elements awesome.  Inspired by [zen-coding](https://code.google.com/p/zen-coding/), the syntax is css-like, terse, not tied to any framework, and very simple to use:
