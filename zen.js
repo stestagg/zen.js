@@ -10,7 +10,6 @@
   function str_unescape(raw) {
     return raw.replace(unescape_re, function(match) { return match.slice(1); });
   };
-  window.xx = str_unescape;
 
   function pad(n, width) {
     n = n + '';
