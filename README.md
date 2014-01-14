@@ -39,4 +39,15 @@ Returns an Array of newly-created DOM elements(matching _code_) without insertin
 
 _zen(code_**.insert(parent)**
 
-Calls make() and then inserts the resulting nodes as childs of the _parent_ element.
+Calls _make()_ and then inserts the resulting nodes as childs of the _parent_ element.
+
+Escaping
+---
+
+Care has been taken to make this library work well with escaping, for example, you can define attributes with spaces and quotes, or put '}' in a text block by escaping it.
+
+```
+zen("a[href='http://www.google.com/?q=moore\\'s law']{Example {google search\\}}")
+```
+
+<a href="http://www.google.com/?q=moore's law">Example {google search}</a>
