@@ -44,7 +44,7 @@ Calls _make()_ and then inserts the resulting nodes as childs of the _parent_ el
 Escaping
 ---
 
-Care has been taken to make this library work well with escaping, for example, you can define attributes with spaces and quotes, or put '}' in a text block by escaping it.
+Care has been taken to make this library work well with escaping, for example, you can define attributes with spaces and quotes, or put '}' in a text block by escaping it.  (Note the double-backslash required due to javascript's built-in string escaping)
 
 ```
 zen("a[href='http://www.google.com/?q=moore\\'s law']{Example {google search\\}}")
