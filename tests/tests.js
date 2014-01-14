@@ -129,5 +129,6 @@ test("Escaping", function() {
 })
 
 test("Documentation examples", function() {
-  zen(".outer>.inner>h1.header{My Header}+p.body{Some body text}").insert(last_fixture);
+  var zz = zen(".outer>.inner>h1.header{My Header}+p.body{Some body text}").make()[0];
+  equal($(zz).text(), "My HeaderSome body text");
 });
