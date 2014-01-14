@@ -22,13 +22,12 @@ results in:
 </div>
 ```
 
-http://jsfiddle.net/xLJY8/
+More examples may be seen in this [js-fiddle](http://jsfiddle.net/xLJY8/1/)
 
-jQuery Example
----
+Features
+-----
 
-```html
-```
+zen.js supports all [features](https://code.google.com/p/zen-coding/wiki/ZenHTMLSelectorsEn) of the zen-coding plugin except filters and snippets ('table+' syntax), any deviance in behaviour that isn't documented here should be treated as a bug.  Nested grouping *is* also supported.
 
 API
 ---
@@ -45,4 +44,15 @@ Returns an Array of newly-created DOM elements(matching _code_) without insertin
 
 _zen(code_**.insert(parent)**
 
-Calls make() and then inserts the resulting nodes as childs of the _parent_ element.
+Calls _make()_ and then inserts the resulting nodes as childs of the _parent_ element.
+
+Escaping
+---
+
+Care has been taken to make this library work well with escaping, for example, you can define attributes with spaces and quotes, or put '}' in a text block by escaping it.  (Note the double-backslash required due to javascript's built-in string escaping)
+
+```
+zen("a[href='http://www.google.com/?q=moore\\'s law']{Example {google search\\}}")
+```
+
+<a href="http://www.google.com/?q=moore's law">Example {google search}</a>
