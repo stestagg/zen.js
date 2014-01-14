@@ -1,2 +1,4 @@
 language: node_js
-script: phantomjs tests/runner.js file:///`pwd`/tests/test.html
+script: 
+ - phantomjs tests/runner.js file:///`pwd`/tests/test.html
+ - phantomjs tests/runner.js file:///`pwd`/tests/test.min.html
