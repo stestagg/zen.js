@@ -24,6 +24,11 @@ results in:
 
 More examples may be seen in this [js-fiddle](http://jsfiddle.net/xLJY8/1/)
 
+Features
+-----
+
+zen.js supports all [features](https://code.google.com/p/zen-coding/wiki/ZenHTMLSelectorsEn) of the zen-coding plugin except filters, any deviance in behaviour that isn't documented here should be treated as a bug.
+
 API
 ---
 
