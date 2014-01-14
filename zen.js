@@ -34,7 +34,7 @@
   var string_match_2 = "'(?:(?:\\\\\\\\)|(?:\\\\')|(?:[^']))*'";
   var text_match = "\\{(?:(?:\\\\\\\\)|(?:\\\\})|(?:[^\\}]))*\\}";
   // HTML 5 has relaxed the idname rules, so this is quite relaxed too..
-  var idname_match = "(?:(?:\\\\.)|(?:[^>+()\\[\\=\\.\\#\\s\\*]))+";
+  var idname_match = "(?:(?:\\\\.)|(?:[^>+()\\[\\=\\.\\#\\s\\*\\{]))+";
   var escaped_token_match = "(?:" + string_match_1 + ")|(?:" + string_match_2 + ")|(?:[^\\]]+)";
   var key_value_match = "\\s*" + idname_match + "\\s*(?:=\\s*(?:" + escaped_token_match + "))?,?\\s*";
   var attr_match = "\\[(?:" + key_value_match + ")+\\]";

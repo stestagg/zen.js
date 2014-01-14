@@ -127,3 +127,7 @@ test("Escaping", function() {
   zenEqual('div.a[b=f\\ oo]', '<div b="f oo" class="a"/>');
   zenEqual("div.a[b='f\\'oo']", '<div b="f\'oo" class="a"/>');
 })
+
+test("Documentation examples", function() {
+  zen(".outer>.inner>h1.header{My Header}+p.body{Some body text}").insert(last_fixture);
+});
